@@ -98,22 +98,7 @@ const fetchClient = async (req, res) => {
   }
 };
 
-// const updateClients = async (req, res) => {
-//   try {
-//     const  clientId  = req.params;
 
-//     const clientDetails = await Client.findById(
-//       {_id:clientId, owner:req.user._id},
-//     )
-//     if(!updatedClient){
-//       return res.status(404).json({ message: "Client not found" });
-//     }
-
-//     res.status(200).json({ message: "Client updated successfully" });
-//   } catch (error) {
-//     res.status(404).json({ message: "can't update client"});
-//   }
-// }
 
 const getClients = async (req, res) => {
   try {

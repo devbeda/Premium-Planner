@@ -10,7 +10,7 @@ router.route("/login").post( login);
 router.route("/logout").post(verifyJWT,logout)
 router.route("/changepassword").post(verifyJWT,changePassword);
 router.route("/getuser").get(verifyJWT,getCurrentUserr)
-// router.route("/yourclient").get(verifyJWT,getClient)
+
 
 
 export default router;

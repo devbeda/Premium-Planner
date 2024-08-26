@@ -156,31 +156,5 @@ const getCurrentUserr =  async(req,res) => {
   }
 }
 
-// const getClient = async(req,res) => {
-//   try {
-//     const user  = await User.aggregate([
-//       {
-//         $match: {
-//           _id: new mongoose.Types.ObjectId(req.user._id)
-//         }
-//       },
-//       {
-//         $lookup: {
-//           from: "clients",
-//           localField:"clients",
-//           foreignField:"_id",
-//           as: "myClients"
-//         }
-//       }
-      
-//     ])
-//     if(!user) {
-//       return res.status(404).json({ message: "User not found" });  // Check if user exists or not
-//     }
-//     return res.status(200).json({message: "clients fetched successfully",clients:user})
-//   } catch (error) {
-//     return res.status(500).json({message:"can't get your clients"})
-//   }
-// }
 
 export { signup, login, logout, changePassword, getCurrentUserr }
