@@ -13,7 +13,7 @@ dotenv.config({
 const app = express();
 app.use(
   cors({
-    origin: "https://frontend-premium-planner.vercel.app",
+    origin: "http://localhost:5173",
     credentials: true,
     // Add other headers if needed.  //
   })
